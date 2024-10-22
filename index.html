@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Manipulation</title>
+    <style>
+        #form-container {
+            margin: 25px;
+        }
+        
+        .output {
+            padding-top: 50px;
+            margin-left: 25px;
+            font-weight: bold;
+            color: #333;
+            display: block;
+            /* Ensures it's below the form */
+        }
+        
+        .box {
+            display: block;
+            padding: 10px;
+            width: 20px;
+            text-align: center;
+            border: 2px solid #333;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Form container for the input field and buttons -->
+    <div id="form-container">
+        <form id="myForm">
+            <label for="array-item">Enter Array Item:</label>
+            <input type="number" id="array-item" />
+            <button onclick="insertItem()">Insert</button>
+            <button onclick="deleteItem()">Delete</button>
+            <button onclick="findItem()">Find</button>
+            <button onclick="printArray()">Print</button>
+        </form>
+    </div>
+
+    <!-- Output container for the array items -->
+    <div class="output" id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
